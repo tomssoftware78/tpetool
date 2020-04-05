@@ -1,0 +1,59 @@
+version: '3.1'
+
+services:
+
+  db:
+    image: mysql
+    command: --default-authentication-plugin=mysql_native_password
+    restart: always
+    env_file:
+      - ./environment-variables.env
+    ports:
+      - 3306:3306
+    volumes:
+      - .data/mysql:/var/lib/mysql
+    container_name: db_server
+    networks:
+      - network1
+
+  backend:
+    build:
+      context: .
+    env_file:
+      - ./environment-variables.env
+    container_name: vivium_backend
+    volumes:
+      - .data/backend/:/logs/
+    env_file:
+      - ./environment-variables.env
+    links:
+      - db
+    networks:
+      network1:
+        ipv4_address: 10.5.10.1
+  
+  frontend:
+    build:
+      context: ../vivium_frontend
+    env_file:
+      - ./environment-variables.env
+    container_name: vivium_frontend
+    volumes:
+      - .data/frontend/:/etc/nginx/logs/
+    env_file:
+      - ./environment-variables.env
+    links:
+      - backend
+    ports:
+      - 8081:8081
+    networks:
+      network1:
+        ipv4_address: 10.5.10.2
+  
+  
+
+networks:
+  network1:
+    ipam:
+      config:
+        - subnet: 10.5.0.0/16        

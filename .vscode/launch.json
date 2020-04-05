@@ -1,0 +1,11 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - TpetoolApplication",
+            "request": "launch",
+            "mainClass": "be.pvgroup.tpetool.TpetoolApplication",
+            "projectName": "tpetool"
+        }
+    ]
+}

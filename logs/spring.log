@@ -1,0 +1,59 @@
+2019-aug.-21 16:04:24.467 INFO  [restartedMain] b.p.t.TpetoolApplication - Starting TpetoolApplication on CI00007569 with PID 18176 (C:\vivium\tpe_tool\tpetool\target\classes started by tomvde in C:\vivium\tpe_tool\tpetool)
+2019-aug.-21 16:04:24.467 INFO  [restartedMain] b.p.t.TpetoolApplication - The following profiles are active: azure
+2019-aug.-21 16:04:26.357 INFO  [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-aug.-21 16:04:26.497 INFO  [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 128ms. Found 1 repository interfaces.
+2019-aug.-21 16:04:26.750 INFO  [restartedMain] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$41debeb1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-aug.-21 16:04:26.900 INFO  [restartedMain] o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2019-aug.-21 16:04:26.904 INFO  [restartedMain] o.a.c.c.StandardService - Starting service [Tomcat]
+2019-aug.-21 16:04:26.904 INFO  [restartedMain] o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-aug.-21 16:04:26.988 INFO  [restartedMain] o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext
+2019-aug.-21 16:04:26.988 INFO  [restartedMain] o.s.w.c.ContextLoader - Root WebApplicationContext: initialization completed in 2517 ms
+2019-aug.-21 16:04:27.343 INFO  [restartedMain] c.z.h.HikariDataSource - HikariPool-2 - Starting...
+2019-aug.-21 16:04:27.345 INFO  [restartedMain] c.z.h.HikariDataSource - HikariPool-2 - Start completed.
+2019-aug.-21 16:04:27.384 INFO  [restartedMain] o.h.j.i.u.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-aug.-21 16:04:27.441 INFO  [restartedMain] o.h.d.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2019-aug.-21 16:04:27.497 INFO  [restartedMain] o.h.t.s.i.SchemaCreatorImpl - HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@3faeef93'
+2019-aug.-21 16:04:27.497 INFO  [restartedMain] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-aug.-21 16:04:27.517 INFO  [restartedMain] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2019-aug.-21 16:04:27.693 INFO  [restartedMain] o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2019-aug.-21 16:04:27.711 WARN  [restartedMain] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-aug.-21 16:04:27.925 INFO  [restartedMain] o.s.b.a.e.w.EndpointLinksResolver - Exposing 2 endpoint(s) beneath base path '/actuator'
+2019-aug.-21 16:04:27.992 INFO  [restartedMain] o.s.b.w.e.t.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2019-aug.-21 16:04:27.993 INFO  [restartedMain] b.p.t.TpetoolApplication - Started TpetoolApplication in 3.635 seconds (JVM running for 488.826)
+2019-aug.-21 16:04:28.020 INFO  [restartedMain] o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation delta:
+
+
+==========================
+CONDITION EVALUATION DELTA
+==========================
+
+
+Positive matches:
+-----------------
+
+   LogFileWebEndpointAutoConfiguration#logFileWebEndpoint matched:
+      - Log File found logging.path logs (LogFileWebEndpointAutoConfiguration.LogFileCondition)
+      - @ConditionalOnMissingBean (types: org.springframework.boot.actuate.logging.LogFileWebEndpoint; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+
+Negative matches:
+-----------------
+
+    None
+
+
+Exclusions:
+-----------
+
+    None
+
+
+Unconditional classes:
+----------------------
+
+    None
+
+
+
